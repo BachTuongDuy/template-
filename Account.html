@@ -1,0 +1,207 @@
+<DOCTYPE! html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AITool</title>
+    <style>
+    body{
+        padding-top:40px;
+    }
+    .body-bg{
+        background: linear-gradient(to right, #7cacdc, #e0e5eb);
+    }
+    form{
+        font-family: 'Roboto', sans-serif;
+    }
+    .form-horizontal ,header{
+        background: #b5963f;
+        padding: 10px 25px;
+        font-size: 30px;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 3px 3px 0 0;
+    }
+    .form-horizontal .form-content{
+        padding: 25px;
+        background: #f9fafd;
+    }
+    .form-horizontal .form-control{
+        padding: 10px 50px 10px 15px;
+        height: 50px;
+        font-size: 18px;
+        color:#000;
+        border: 2px solid #acacac;
+        margin-bottom: 15px;
+    }
+    .form-horizontal .from-control:hover{
+        border-color: #c9af76;
+    }
+    .form-horizontal .form-control:focus{
+        border-color: #b5953f;
+        box-shadow: none;
+    }
+    .form-horizontal .contol-label{
+        width: 42px;
+        height: 40px;
+        font-size: 17px;
+        color: #acacac;
+        border-left: 1px solid #acacac;
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        text-align: center;
+    }
+    .form-horizontal .captcha{
+        padding-right: 0;
+    }
+    .form-horizontal .captcha label{
+        background: #e6e4e4;
+        display: block;
+        height: 50px;
+        font-size: 16px;
+        color: #acacac;
+        line-height: 45px;
+        text-align: center;
+        border-radius: 3px 0 0 3px;
+    }
+    .form-horizontal .captcha-text{
+        padding-left: 0;
+    }
+    .form-horizontal .catcha-text input{
+        border-radius: 0 3px 3px 0;
+    }
+    .from-horizontal .footer{
+        background: #065464;
+        border-top:1px solid #b5953f;
+        padding: 10px 25px;
+    }
+    .form-horizontal .footer .bnt{
+        background: #b5953f;
+        font-size: 18px;
+        color: #fff;
+        float: right;
+        margin: 10px 0;
+        clear: both;
+        padding: 10px 25px;
+        transition: all 0.5s aese 0s;
+    }
+    form-horizontal .name{
+        padding: 10px 15px;
+    }
+    @media only screen and (max-width: 767px){
+        .form-horizontal .contol-label i{
+            line-height: 40px;
+        }
+        .form-horizontal .captcha label{
+            font-size: 13px;
+        }
+    }
+    </style>
+
+    <link rel="stylesheet" herf="">
+
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>   
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" herf="{{url_for('index')}}"><h3><p style="color: rgb(2, 70, 34)">Navbar</p></h3></a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" arie-label="Toggel navigation" >
+            <span class="navbar-toggle-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li clall="nav-item active">
+                    <a class="nav-link" herf="{{url_for('Account')}}"><p style="color: rgb(90, 2, 90)">Account<span class="sr-only">(current)</p></span></a>
+                </li>
+
+                <li class="navbar-item active">
+                    <a class="nav-link" herf="#"><p style = "color: rgb(90, 2, 90)">Home<span class="sr-only">(current)</p></span></a>
+                </li>
+
+                <li class="navbar-item active">
+                    <a class="nav-link" herf="#"><p style="color: rgb(90, 2, 90)">link<span class="sr-only">(current)</p></span></a>
+                </li>
+                <li class="navbar-item dropdown">
+                    <a class="nav-link dropdown-toggle" herf="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><p style="color: rgb(90, 2, 90)">Dropdown</p></a>
+                    <div class="dropdown-menu" aria-labelledby="navbardropdown">
+                        <a class="dropdown-item" herf="#">Action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" herf="#">Another Action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" herf="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link disabled" herf="#" tabindex="-1" aria-disabled="true"><p style="color: rgb(90, 2, 90)">Disabled</p></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" method="POST">
+                <input name="query" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+                
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <form class="form-horizontal">
+                    <div class="header"> Đăng ký</div>
+                    <div class="form-content"> 
+                        <div class="form-group">
+                            <div class="col-sm-6"> <input class="form-control name" id="exampleInputName2" placeholder="Họ" type="text">
+                            </div>
+                            <div class="col-sm-6"> <input class="form-control name" id="exampleInputName2" placeholder="Tên" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-6"> <input class="form-control name" id="exampleInputName2" placeholder="Tên Tài Khoản" type="text"> <lable class="control-label" for="exampleInputName2"><i class="fa fa-user"></i></lable>
+                            </div>
+                            <div class="col=sm-6"> <input class="form-control name" id="exampleInputName2" placeholder="Địa chỉ Email" type="email"><label class="control-label" for="exampleInputName2"><i class="fa fa-envelope-o"></i></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-6"><input class="form-control name" id="exampleInputName2" placeholder="Mật khẩu" type="password"><label class="control-label" for="exampleInputName2"><i class="fa fa-lock"></i></label>
+                            </div>
+                            <div class="col-sm-6"><input class="form-control name" id="exampleInputName2" placeholder="Xác nhận mật khẩu" type="password"><label class="control-label" for="exampleName2"><i class="fa fa-unlock"></i></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12"><select class="form-control">
+<option value="none" selected="">Chọn giới tính</option>
+<option value="male">Nam</option>
+<option value="female">Nữ</option>
+<option value="other">Khác</option>
+</select>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="footer clearfix">
+                        <button type="submit" class="btn btn-default">Đăng ký ngay</button>
+                    </div>
+                   
+                </form>
+            </div>    
+        </div>
+    </div> 
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</body>
+</html>
